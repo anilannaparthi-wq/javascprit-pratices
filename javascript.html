@@ -13,18 +13,61 @@
     console.log("Hello, World!");
 
     let balance = 5000;
-let withdrawalAmount = 2000;
+    let withdrawalAmount = 2000;
 
-if (withdrawalAmount <= 0) {
-  console.log("Error: Withdrawal amount must be greater than zero.");
-} else if (withdrawalAmount > balance) {
-  console.log("Error: Insufficient balance.");
-} else {
-  balance = balance - withdrawalAmount;
-  console.log("Withdrawal successful!");
-  console.log("Amount withdrawn: " + withdrawalAmount);
-  console.log("Remaining balance: " + balance);
-}
+    if (withdrawalAmount <= 0) {
+      console.log("Error: Withdrawal amount must be greater than zero.");
+    } 
+    else if (withdrawalAmount > balance) {
+      console.log("Error: Insufficient balance.");
+    } 
+    else {
+      balance = balance - withdrawalAmount;
+      console.log("Withdrawal successful!");
+      console.log("Amount withdrawn: " + withdrawalAmount);
+      console.log("Remaining balance: " + balance);
+    }
+
+  // Total price of three products
+  let p1 = 10;
+  let p2 = 20;
+  let p3 = 30;
+  let total = p1 + p2 + p3;
+  console.log("Total price: " + total);
+
+  //Even or odd using %
+  let number = 9999;
+  if (number % 2 === 0) {
+    console.log(number + " is even");
+  } 
+  else {
+    console.log(number + " is odd"); // 7 is odd
+  }
+
+  //Compare two ages
+  let age1 = 25;
+  let age2 = 25;
+  if (age1 > age2) {
+    console.log("Age 1 is greater than Age 2");
+  } else if (age2 > age1) {
+    console.log("Age 2 is greater than Age 1");
+  } else if (age1 === age2) {
+    console.log("Both ages are equal");
+  }
+  // Login condition using &&
+  let username = "anil";
+  let password = "Anil@123";
+  if (username === "anil" && password === "Anil123") {
+    console.log("Login successful!");
+  } else {
+    console.log("Invalid username or password.");
+  }
+
+  //Update a score using += and -=
+  let score = 0;
+  score += 10; 
+  score -= 5; 
+  console.log("Final score: " + score);
   </script>
 </body>
 </html>
