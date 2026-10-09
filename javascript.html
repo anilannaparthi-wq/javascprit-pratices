@@ -68,6 +68,34 @@
   score += 10; 
   score -= 5; 
   console.log("Final score: " + score);
+
+
+  //Employee Performance & Bonus System
+  let salary = 30000;
+  let performanceScore = 86;
+  let attendance = 94;
+  let experience = 3;
+  let warnings = 0;
+  let bonusPercent = 0;
+  if (performanceScore >= 70 && attendance >= 85 && warnings === 0) {
+    if (performanceScore >= 90 && experience >= 5) {
+    bonusPercent = 25;
+    } else if (performanceScore >= 90) {
+    bonusPercent = 20;
+    } else if (performanceScore >= 80 && experience >= 3) {
+    bonusPercent = 15;
+    } else if (performanceScore >= 70) {
+    bonusPercent = 10;
+    }
+    let bonusAmount = salary * bonusPercent / 100;
+    let newSalary = salary + bonusAmount;
+    console.log("Bonus: " + bonusPercent + "%");
+    console.log("Bonus Amount: " + bonusAmount);
+    console.log("New Salary: " + newSalary);
+  } 
+  else {
+  console.log("Not eligible for bonus");
+  }
   </script>
 </body>
 </html>
